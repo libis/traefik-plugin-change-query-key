@@ -1,0 +1,8 @@
+displayName: Query Key Change
+type: middleware
+import: github.com/traefik/change-query-key
+summary: Change the name of a key in a Query.
+
+testData:
+  keyname: u
+  newkeyname: Username
