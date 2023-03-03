@@ -1,6 +1,6 @@
 displayName: Change Query Key
 type: middleware
-import: github.com/traefik/traefik-plugin-change-query-key
+import: github.com/libis/traefik-plugin-change-query-key
 summary: Change the name of a key in a Query.
 
 testData:
