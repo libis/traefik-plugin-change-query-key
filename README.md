@@ -11,7 +11,7 @@ experimental:
   plugins:
     change-query-key:
       moduleName: github.com/libis/traefik-plugin-change-query-key
-      version: v1.0.1
+      version: v0.1.1
 ```
 
 ## Dynamic Configuration
