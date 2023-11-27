@@ -1,3 +1,4 @@
+package traefik_plugin_change_query_key
 
 import (
 	"context"
