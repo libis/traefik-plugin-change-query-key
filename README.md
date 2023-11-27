@@ -1,6 +1,6 @@
 # Traefik Query Key Change Middleware Plugin
 
-This Traefik middleware plugin you to change the name of a query key.
+This Traefik middleware plugin you to change the name of a query key. Optionally, if the query key is not present then it gets created with 'newkeyname' and 'value'.
 
 ## Static Configuration
 
@@ -11,7 +11,7 @@ experimental:
   plugins:
     change-query-key:
       moduleName: github.com/libis/traefik-plugin-change-query-key
-      version: v0.1.1
+      version: v0.2.0
 ```
 
 ## Dynamic Configuration
@@ -21,10 +21,12 @@ experimental:
 ```yaml
 ...
   middlewares:
-    rename_query_key:                #Change the key name, for example /foo?u=U123456 -> /foo?Username=U123456
+    rename_query_key:                         #Change the key name, for example /foo?u=U123456 -> /foo?Username=U123456
       plugin:
         change-query-key:
-          keyname:               "u"
-          newkeyname:            "Username"
+          keyname:               "u"          # Required.
+          newkeyname:            "Username"   # Required.
+          createifmissing:       true         # Optional, default false.
+          value:                 "foo"        # If createifmissing is true then this is required.
 ...
 ```
