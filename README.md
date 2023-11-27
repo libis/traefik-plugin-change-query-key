@@ -1,6 +1,6 @@
 # Traefik Query Key Change Middleware Plugin
 
-This Traefik middleware plugin you to change the name of a query key. Optionally, if the query key is not present then it gets created with 'newkeyname' and 'value'.
+This Traefik middleware plugin allows you to change the name of a query key. Optionally, if the query key is not present then it gets created with 'newkeyname' and 'value'.
 
 ## Static Configuration
 
