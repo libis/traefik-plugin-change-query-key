@@ -6,3 +6,5 @@ summary: Change the name of a key in a Query.
 testData:
   keyname: u
   newkeyname: Username
+  createifmissing: true
+  value: test
